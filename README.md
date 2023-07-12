@@ -1,2 +1,2 @@
-# NLPonAZDo
-NLP queries using OpenAi on AzDo. The RAG pattern implementation
+# ChatWithAzDo
+NLP queries on Azure DevOps Boards

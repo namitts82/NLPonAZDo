@@ -1,0 +1,129 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "Container",
+      "spacing": "Large",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://www.launchpads.com.au/assets/css/icons/animated/search/animat-search-color.gif",
+                  "size": "Small",
+                  "horizontalAlignment": "Center",
+                  "visible": "False"
+                }
+              ],
+              "width": "auto"
+            },
+            {
+              "type": "Column",
+              "spacing": "Large",
+              "width": "auto",
+              "horizontalAlignment": "Left",
+              "verticalContentAlignment": "Center",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "text": "Found a total of ${total} results",
+                  "wrap": true,
+                  "size": "Medium"
+                },
+                {
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "text": "Following are the top Results",
+                  "wrap": true,
+                  "style": "default",
+                  "fontType": "Default",
+                  "size": "Default"
+                }
+              ]
+            }
+          ],
+          "horizontalAlignment": "Left"
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "type": "Container",
+      "spacing": "Large",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "text": "ID",
+                  "wrap": true
+                }
+              ],
+              "width": "auto"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "text": "Work Item",
+                  "wrap": true
+                }
+              ],
+              "width": "auto"
+            }
+          ]
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "$data": "${workitem}",
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${id}",
+                  "wrap": true,
+                  "color": "Default"
+                }
+              ],
+              "width": "auto"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "[${name}](${link})",
+                  "wrap": true
+                }
+              ],
+              "width": "stretch"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

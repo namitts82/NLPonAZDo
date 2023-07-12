@@ -1,0 +1,46 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://media0.giphy.com/avatars/HeyAutoHQ/DgfrJNR8oUyv.gif",
+      "size": "large"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Welcome!",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": true,
+      "text": "This is a sample application implementing the RAG pattern on Azure Devops Boards Semantic Search APIs using Azure Open AI Service",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "The Blog that explains it all",
+      "url": "https://www.linkedin.com/in/namitts/"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "About RAG (Retrieval Augmented Generation) Pattern",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Azure Open AI Service",
+      "url": "https://azure.microsoft.com/en-au/products/cognitive-services/openai-service"
+    }
+  ]
+}
