@@ -56,7 +56,7 @@ namespace ChatWithAzDoBoard.Dialogs
         /// <returns></returns>
         private async Task<DialogTurnResult> IntroStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            var messageText = "Type you rquery in natural language";
+            var messageText = "Type your query in plain text";
             // Create the PromptOptions which contain the prompt and re-prompt messages.
             var promptMessage = MessageFactory.Text(messageText, messageText, InputHints.ExpectingInput);
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = promptMessage }, cancellationToken);
